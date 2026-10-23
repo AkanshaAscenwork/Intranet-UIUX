@@ -642,6 +642,9 @@ html[dir="rtl"] .v-home-classic .news-tag{left:auto;right:12px}
 html[dir="rtl"] .v-home-classic .cal-date{border-left:0;border-right:3px solid var(--orange)}
 html[dir="rtl"] .v-home-classic .help-card::before{right:auto;left:-30px}
 
+.v-home-classic .pills-wrap{margin:24px 32px 0;}
+.v-home-classic .hero-row{padding-top:20px;}
+
 .v-home-classic .alert-bar{display:flex;align-items:center;gap:0;background:rgba(20,20,22,.86);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.12);border-radius:calc(16px*var(--rscale));box-shadow:var(--shadow-lg);overflow:hidden;min-height:60px;}
 .v-home-classic .ab-label{display:flex;align-items:center;gap:8px;align-self:stretch;padding:0 20px;background:#c50f1f;color:#fff;font-size:12.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;flex-shrink:0;}
 .v-home-classic .ab-label svg{width:17px;height:17px;}
@@ -795,6 +798,13 @@ html[dir="rtl"] .v-home-classic .help-card::before{right:auto;left:-30px}
 .v-home-classic .presence span b{width:8px;height:8px;border-radius:50%;background:var(--orange);display:inline-block;}
 </style>
 
+    <div class="pills-wrap" data-w="quick">
+      <div class="alert-bar" id="alert-bar">
+        <div class="ab-label"><span class="ab-dot"></span><i data-lucide="siren"></i>Alerts</div>
+        <div class="ab-track" id="ab-track" aria-live="polite"></div>
+        <div class="ab-ctl"><a href="#/alerts" class="ab-all">View all</a></div>
+      </div>
+    </div>
     <div class="hero-row">
       <section class="hero" id="hero-slider" data-w="hero">
         <div class="hero-slide active"><video autoplay muted loop playsinline preload="metadata" poster="asset:d01" src="https://3cmetal.com/wp-content/uploads/2025/07/Desktop.mp4"></video></div>
@@ -841,13 +851,6 @@ html[dir="rtl"] .v-home-classic .help-card::before{right:auto;left:-30px}
       </div>
     </div>
 
-    <div class="pills-wrap" data-w="quick">
-      <div class="alert-bar" id="alert-bar">
-        <div class="ab-label"><span class="ab-dot"></span><i data-lucide="siren"></i>Alerts</div>
-        <div class="ab-track" id="ab-track" aria-live="polite"></div>
-        <div class="ab-ctl"><a href="#/alerts" class="ab-all">View all</a></div>
-      </div>
-    </div>
     </div>
 
     <div class="page-wrap">
